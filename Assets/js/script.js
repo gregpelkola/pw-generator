@@ -5,10 +5,20 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  
 
   passwordText.value = password;
 
-}
+};
+
+function generatePassword() {
+  var newPass = "test";
+ 
+
+
+
+  return newPass;
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

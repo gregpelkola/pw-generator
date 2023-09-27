@@ -23,6 +23,8 @@ function generatePassword() {
   var hasUppercase = confirm("Would you like the password to contain uppercase letters?");
   var hasNumbers = confirm("Would you like the password to contain numbers?");
   var hasSpecial = confirm("Would you like the password to contain special charcters?");
+
+  return newPass;
 };  
 
 

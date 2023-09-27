@@ -24,6 +24,11 @@ function generatePassword() {
   var hasNumbers = confirm("Would you like the password to contain numbers?");
   var hasSpecial = confirm("Would you like the password to contain special charcters?");
 
+  for (let i = 0; i < passLength; i++) {
+    let randomIdx = Math.floor(Math.random() * lowerCase.length * upperCase.length * numbers.length * specChar.length);
+    newPass += lowerCase[randomIdx] += upperCase[randomIdx] += numbers[randomIdx] += specChar[randomIdx];
+  }
+
   return newPass;
 };  
 
